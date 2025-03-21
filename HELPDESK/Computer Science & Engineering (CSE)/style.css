@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+/* Page Sections */
+.page {
+    display: none;
+    padding: 100px 20px;
+}
+
+.page h1 {
+    color: #333;
+}
+
+.page ul {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.page ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+/* Header Section */
+#header_part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 95px;
+    width: 100%;
+    background-color: #87CEEB;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 150px;
+    margin-left: 20px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 10px 15px;
+}
+
+#navbar a:hover {
+    color: black;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* Main Section */
+.main {
+    padding: 100px 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    background-color: #ADD8E6;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    background-color: #87CEEB;
+    transform: scale(1.05);
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Profile Section */
+.Profile {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-card img:hover {
+    transform: scale(1.03);
+}
+
+.profile-card h3 {
+    color: #004080;
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.profile-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* About Section */
+.about-page {
+    background: linear-gradient(to right, #7175b4, #8f94fb);
+    color: white;
+    padding: 60px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    display: none;
+}
+
+.about-page .about-logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-page .about-container {
+    display: flex;
+    flex-direction: row; /* Set image to the side */
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Reduced gap */
+}
+
+.about-page .image-about {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-page .image-about img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.about-page .image-about img:hover {
+    transform: scale(1.05);
+}
+
+.about-page .about-details {
+    flex: 2;
+    text-align: left;
+    max-width: 600px;
+}
+
+.about-page .about-details .heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-page .back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.about-page .back-button:hover {
+    background-color: #ff4757;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    background-color: #5ca4c5;
+    color: white;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #header_part {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    #navbar.active {
+        display: flex;
+    }
+
+    .about-page .about-container {
+        flex-direction: column; /* Stack on small screens */
+        align-items: center; /* Center content */
+        text-align: center; /* Align text center */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-page .about-logo {
+        font-size: 2rem;
+    }
+
+    .about-page .about-details .heading {
+        font-size: 1.5rem;
+    }
+
+    .back-button {
+        padding: 8px 16px;
+    }
+}
