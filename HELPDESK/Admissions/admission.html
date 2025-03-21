@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVRU BIHAR</title>
+    <link rel="stylesheet" href="/Accounts/style.css">
+    <link rel="icon" href="/img/cvru.png" type="image/png">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header_part">
+        <div class="logo">
+            <img src="/img/cvru.png" alt="CVRU Logo">
+        </div>
+        <div id="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="navbar">
+            <a href="/index.html">Home</a>
+            <a href="#about-page">About</a>
+            <a href="#service_page">Service</a>
+            <a href="#skill_page">Skills</a>
+            <a href="#team_page">Team</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="page">
+        <main id="main">
+            <h1>Admissions Cell</h1>
+        </main>
+
+        <section class="Profile">
+            <div class="container">
+
+                <!-- Profile 1 -->
+                <div class="profile-card" onclick="showPage('about-1')">
+                    <img src="/Admissions/img/about.jpg" alt="Brajesh Kumar">
+                    <h3>Brajesh Kumar</h3>
+                    <p>Admission Counsellor</p>
+                    <p>Mobile:- 7352539653</p>
+                    <p>Email Id-brajeshk68@gmail.com</p>
+                </div>
+
+                <!-- Profile 2 -->
+                <div class="profile-card" onclick="showPage('about-2')">
+                    <img src="/Admissions/img/about.jpg" alt="Penter Kumar">
+                    <h3>Penter Kumar</h3>
+                    <p>Admission Counsellor</p>
+                    <p>Mobile:- 9608715355</p>
+                    <p>Email Id-pentarkumar2@gmail.com</p>
+                </div>
+
+                <!-- Profile 3 -->
+                <div class="profile-card" onclick="showPage('about-3')">
+                    <img src="/Admissions/img/about.jpg" alt="Kanchan Kumari">
+                    <h3>Kanchan Kumari</h3>
+                    <p>Admission Counsellor</p>
+                    <p>Mobile:- 7488419483</p>
+                    <p>Email Id-sonyu6022@gmail.com</p>
+                </div>
+
+            </div>
+        </section>
+        
+
+    </section>
+
+    <!-- About Pages -->
+    <section id="about-1" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">About Brajesh Kumar</div>
+            <div class="about-container">
+                <div class="image-about"><img src="/Admissions/img/about.jpg" alt="Dr. Shankar Mahadevan"></div>
+                <div class="about-details">
+                    <p class="heading">I am Brajesh Kumar</p>
+                    <p>Head of the Admission Department at Dr. C.V. Raman University, Bihar. I helps students with the admission process by giving clear information and guidance With his friendly and supportive approach, he makes it easier for students to choose the right academic path.
+                    </p>
+                    <a href="#" class="back-button" onclick="showPage('home')">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-2" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">About Dr. Aquil Ahmad Khan</div>
+            <div class="about-container">
+                <div class="image-about"><img src="/Admissions/img/about.jpg" alt="Dr. Aquil Ahmad Khan"></div>
+                <div class="about-details">
+                    <p class="heading">I am Dr. Aquil Ahmad Khan</p>
+                    <p>Assistant Professor in the Department of Media and Communication.</p>
+                    <a href="#" class="back-button" onclick="showPage('home')">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-3" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">About Dr. Anu Nair</div>
+            <div class="about-container">
+                <div class="image-about"><img src="/Admissions/img/about.jpg" alt="Dr. Anu Nair"></div>Dr. Shankar
+                <div class="about-details">
+                    <p class="heading">I am Dr. Anu Nair</p>
+                    <p>Program Coordinator in the Department of Media and Communication.</p>
+                    <a href="#" class="back-button" onclick="showPage('home')">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2025 CVRU Bihar. All rights reserved.</p>
+        <nav class="footer-links">
+            <a href="#" onclick="showPage('home')">Home</a> |
+            <a href="#" onclick="showPage('about')">About</a> |
+            <a href="#" onclick="showPage('service_page')">Services</a> |
+            <a href="#" onclick="showPage('contact_page')">Contact</a>
+        </nav>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to show and hide sections dynamically
+        function showPage(pageId) {
+            // Hide all sections with class 'page'
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        // Ensure home page is visible on initial load
+        document.addEventListener("DOMContentLoaded", function () {
+            showPage('home');
+        });
+
+         document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', function () {
+            navbar.classList.toggle('active');
+        });
+    });
+    </script>
+
+</body>
+
+</html>
