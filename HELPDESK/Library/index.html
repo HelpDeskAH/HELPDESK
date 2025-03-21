@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVRU Bihar</title>
+    <link rel="stylesheet" href="/Computer Science & Engineering (CSE)/style.css">
+    <link rel="icon" href="/img/cvru.png" type="image/png">
+
+</head>
+
+
+<body>
+
+<!-- Header -->
+    <header id="header_part">
+        <div class="logo">
+            <img src="/img/cvru.png" alt="CVRU Logo">
+        </div>
+        <nav id="navbar">
+            <a href="/index.html">Home</a>
+            <a href="#about-page">About</a>
+            <a href="#service_page">Service</a>
+            <a href="#skill_page">Skills</a>
+            <a href="#team_page">Team</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Page -->
+    <main id="home" class="page">
+        <div class="container">
+            <div class="box" onclick="showPage('B.Lib')">Bachelor of Library <br>(B.Lib)</div>
+            <div class="box" onclick="showPage('M.Lib')">Master of Library <br> (M.Lib)</div>
+            <div class="box" onclick="showPage('library')">Library</div>
+            <a href="/index.html" class="back-button">Go Back</a>
+
+        </div>
+    </main>
+
+    <!-- Admissions Page -->
+    <div id="B.Lib" class="page">
+        <h1>Bachelor of Library (B.Lib)</h1>
+        <p>Welcome to the B.Lib Section. Find details below:</p>
+        <ul>
+            <li>Bachelor of Technology (B.Tech)</li>
+            <li>Master of Business Administration (MBA)</li>
+            <li>Bachelor of Science (B.Sc)</li>
+            <li>Bachelor of Arts (BA)</li>
+        </ul>
+        <a href="#" class="back-button" onclick="showPage('home')">Go Back</a>
+    </div>
+
+    <!-- Accounts Page -->
+    <div id="M.Lib" class="page">
+        <h1>Master of Library (M.Lib)</h1>
+        <p>All financial transactions and fee details.</p>
+        <a href="#" class="back-button" onclick="showPage('home')">Go Back</a>
+    </div>
+
+    <!-- Library Page -->
+    <div id="library" class="page">
+        <h1>Library</h1>
+        <p>Library books and resources.</p>
+        <a href="#" class="back-button" onclick="showPage('home')">Go Back</a>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2025 CVRU Bihar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'none'; // Hide all pages
+            });
+            document.getElementById(pageId).style.display = 'block'; // Show selected page
+        }
+
+        // Show home page on load
+        document.addEventListener("DOMContentLoaded", function () {
+            showPage('home');
+        });
+    </script>
+
+</body>
+
+</html>
